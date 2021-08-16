@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [YaSchools Registeration suit]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="tests.RegisterationWithInvalidDataTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="userRegisterWithExistEmail"/>
+          <include name="takeScreenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.RegisterationWithInvalidDataTest -->
+      <class name="tests.RegisterationTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="userRegisterWithValidInput"/>
+          <include name="takeScreenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.RegisterationTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [YaSchools Registeration suit] -->

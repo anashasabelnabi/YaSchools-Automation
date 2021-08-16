@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="User Registeration suit">
+	<parameter name="browser" value="chrome" />
+	<test name="Registeration Test">
+		<classes>
+			<class name="tests.RegisterationTest" />
+			<class name="tests.RegisterationWithInvalidDataTest" />
+		</classes>
+	</test>
+	<test name="Login Test">
+		<classes>
+			<class name="tests.LoginTest" />
+			<class name="tests.LoginWithInvalidDataTest" />
+		</classes>
+	</test>
+		<test name="Teacher Register Test">
+		<classes>
+			<class name="tests.TeacherRegisterationTest" />
+			<class name="tests.TeacherRegisterWithInvalidData" />
+		</classes>
+	</test>
+	<test name="Teacher Login Test">
+		<classes>
+			<class name="tests.TeacherLoginWithInvalidData" />
+		</classes>
+	</test>
+</suite>
+
+
