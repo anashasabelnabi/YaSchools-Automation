@@ -1,15 +1,19 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AllSchoolsPage extends PageBase {
+import com.shaft.gui.element.ElementActions;
+
+public class AllSchoolsPage{
 
 	public JavascriptExecutor jse ;
+	WebDriver driver ;
 	public AllSchoolsPage(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 		jse = (JavascriptExecutor)driver;
 		}
 	@FindBy(id="schoolName")
@@ -18,8 +22,10 @@ public class AllSchoolsPage extends PageBase {
 	@FindBy(xpath="//button[contains(.,'ابحث')]")
 	public WebElement searchBtn;
 	
-	@FindBy(xpath = "//a[contains(.,'Ajyal Mostakbal School')]")
-	public WebElement ajyalMostqblPageBtn;
+	public By ajyalMostqblPageBtn = By.xpath("//a[contains(.,'Ajyal Mostakbal')]");
+	public void openSchoolPage() {
+		ElementActions.click(driver, ajyalMostqblPageBtn);
+	}
 	
 //	public void openTestingSchool() {
 //		setText(searchInput,"ajyal");

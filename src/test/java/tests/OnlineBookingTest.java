@@ -1,9 +1,10 @@
 package tests;
 
 import static org.testng.Assert.assertTrue;
-import org.testng.annotations.Test;
 
-import com.shaft.gui.element.ElementActions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import pages.OnlineBookingPage;
 import pages.ProfilePage;
@@ -20,11 +21,13 @@ public class OnlineBookingTest extends TestBase {
 		onlineBookingPageObject = new OnlineBookingPage(driver);
 		profilePageObject = new ProfilePage(driver);
 		//Open School Page
-		profilePageObject.showSchoolPageBtn.click();
+		profilePageObject.clickShowSchoolPage();
 		//Click Book Now
-		ElementActions.click(driver,schoolPageObject.bookNowBtn);
+		schoolPageObject.clickBookNow();
 		//Online Booking 
 		onlineBookingPageObject.parentBooking();
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.urlContains("pay"));
 		assertTrue(driver.getCurrentUrl().contains("pay"));
 	}
 

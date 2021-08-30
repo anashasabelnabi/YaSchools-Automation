@@ -45,21 +45,22 @@ public class OnlineBookingPage{
 	
 	//When Open The Page There is a span under Select With class defined in FirstClick Locator .
 
-	public By firstClick = By.xpath("//span[@class='select2 select2-container select2-container--krajee']");
+	public By firstClick = By.xpath("//span[contains(@class,'select2 select2-container select2-container--krajee')][contains(@data-select2-id, '1')]");
 	
 	//When I click on the dropdown The class of this Span Change to Locator defined in secondClick.
 
-	public By secondClick = By.xpath("//span[@class='select2 select2-container select2-container--krajee select2-container--below select2-container--open select2-container--focus']");
+	public By secondClick = By.xpath("//span[@class='select2 select2-container select2-container--krajee select2-container--above select2-container--open select2-container--focus'][contains(@data-select2-id,'1')]");
 	
 	//When I choose option from dropdown The class of this Span Change to Locator defined in thirdClick.
 	
 	public By thirdClick = By.xpath("//span[@class='select2 select2-container select2-container--krajee select2-container--below select2-container--focus']");
 									 
-	//Search Input in Dropdown menu to enter a new child
-	public By childNameText = By.xpath("//input[@class='select2-search__field']");
-	//Xpath about new added child 
-	public By childNameDropDown = By.xpath("//option[contains(.,'hamza')]");
-
+	//Choose child name
+	public By childName = By.xpath("//li[contains(@id,'3200')]");
+	
+	//Close Announcement Form
+	public By closeAnnouncementForm = By.xpath("//i[contains(@class,'fas fa-times pe-2')]");
+	
 	@FindBy (id="childsuperior-childs-0-birthdate")
 	public WebElement childBirthdateInput ;
 
@@ -75,14 +76,14 @@ public class OnlineBookingPage{
 	@FindBy (css="div.multiple-input-list__btn.js-input-remove.btn.btn-danger")
 	public WebElement removeChildButton ;
 
-	@FindBy (id="childsuperior-terms")
-	public WebElement termsCheckBox ;
+	public By termsCheckBox = By.id("childsuperior-terms") ;
 
-	@FindBy (id="childsuperior-contract_items")
-	public WebElement contractTermsCheckBox ;
+	public By contractTermsCheckBox = By.id("childsuperior-contract_items") ;
 
 	@FindBy(css="button.btn.custom-primary-button.subBtn")
-	public WebElement payFeeButton ;
+	
+	public By payFeeButton = By.xpath("//button[contains(.,'دفع إجمالي الرسوم')]") ;
+
 
 	public void scriptToClickBtn(WebElement button) {
 		jse.executeScript("arguments[0].click();",button);
@@ -90,19 +91,26 @@ public class OnlineBookingPage{
 
 
 	public void parentBooking(){
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver,50);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(closeAnnouncementForm));
+		if(ElementActions.isElementDisplayed(driver, closeAnnouncementForm)) {
+			ElementActions.click(driver, closeAnnouncementForm);
+		}
 		if(ElementActions.isElementDisplayed(driver,firstClick)){
 			if(ElementActions.isElementClickable(driver,firstClick)) {
 				wait.until(ExpectedConditions.elementToBeClickable(firstClick));
 				ElementActions.click(driver, firstClick);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(secondClick));
+				wait.until(ExpectedConditions.visibilityOfElementLocated(childName));
 			}
 		}
-		wait.until(ExpectedConditions.visibilityOfElementLocated(childNameText));
-		ElementActions.type(driver,childNameText,"hamza");
-		ElementActions.click(driver,childNameDropDown);
-		scriptToClickBtn(termsCheckBox);
-		scriptToClickBtn(contractTermsCheckBox);
-		scriptToClickBtn(payFeeButton);
+		if(ElementActions.isElementDisplayed(driver, childName)) {
+			if(ElementActions.isElementClickable(driver, childName)) {
+				wait.until(ExpectedConditions.elementToBeClickable(childName));
+				ElementActions.click(driver,childName);
+			}
+		}
+		ElementActions.click(driver, termsCheckBox);
+		ElementActions.click(driver, contractTermsCheckBox);
+		ElementActions.click(driver, payFeeButton);
 	}
 }
