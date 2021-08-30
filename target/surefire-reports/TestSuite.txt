@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 34.837 s <<< FAILURE! - in TestSuite
+tests.PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin  Time elapsed: 23.862 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q6V2744', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 420db69d00faeb698b4ca050c9991f82
+*** Element info: {Using=id, value=childsuperior-full_name}
+	at tests.PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin(PotentialBookingWithoutLoginTest.java:37)
+
+tests.PotentialBookingWithoutLoginTest.takeScreenshotOnFailure[[TestResult name=parentCanMakePotentailBookingRequestWithoutLogin status=FAILURE method=PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin()[pri:0, instance:tests.PotentialBookingWithoutLoginTest@2a03d65c] output=
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[tests.PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin]
+################################################################################################################################################]](0)  Time elapsed: 23.901 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q6V2744', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 420db69d00faeb698b4ca050c9991f82
+

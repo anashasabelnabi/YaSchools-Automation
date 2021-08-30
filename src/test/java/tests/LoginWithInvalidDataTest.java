@@ -21,7 +21,7 @@ public class LoginWithInvalidDataTest extends TestBase {
 	//User Cannot Login With invalid Email and valid password
 	public void userCannotLoginWithInValidEmail() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("anas1234",password);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -34,7 +34,7 @@ public class LoginWithInvalidDataTest extends TestBase {
 	//User Cannot login with Wrong Email and Valid Password
 	public void userCannotLoginWithWrongEmail() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("anas1234@yahoo.com",password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -47,7 +47,7 @@ public class LoginWithInvalidDataTest extends TestBase {
 	//User Cannot Login With Valid Email and invalid Password
 	public void userCannotLoginWithInValidPassword() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin(email,"12345");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -59,7 +59,7 @@ public class LoginWithInvalidDataTest extends TestBase {
 	//User Cannot Login With Invalid Email and invalid Password
 	public void userCannotLoginWithInvaildEmailAndInValidPassword() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("anas@yahoo.com","12345");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -72,7 +72,7 @@ public class LoginWithInvalidDataTest extends TestBase {
 	//User Cannot login Without Entering Email
 	public void emailFieldIsRequired() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("",password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -84,7 +84,7 @@ public class LoginWithInvalidDataTest extends TestBase {
 	@Test
 	public void passwordFieldIsRequired() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin(email,"");
 		WebDriverWait wait = new WebDriverWait(driver, 10);

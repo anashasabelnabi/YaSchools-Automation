@@ -30,11 +30,11 @@
   </parameter>
   <parameter>
     <key>sun.boot.library.path</key>
-    <value>C:\Users\anash\Downloads\Selenium Setup\eclipse-jee-2021-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin</value>
+    <value>C:\Program Files\Java\jdk-16.0.2\bin</value>
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>C:\Users\anash\AppData\Local\Temp\surefire15888933792722803089\surefirebooter9126886934983139211.jar C:\Users\anash\AppData\Local\Temp\surefire15888933792722803089 2021-08-30T14-44-34_371-jvmRun1 surefire10303926684164203694tmp surefire_012356441307608272995tmp</value>
+    <value>C:\Users\anash\AppData\Local\Temp\surefire6206632112512398295\surefirebooter12114768473427912562.jar C:\Users\anash\AppData\Local\Temp\surefire6206632112512398295 2021-08-30T20-20-18_603-jvmRun1 surefire1724308816964381943tmp surefire_08216919970931175351tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -58,11 +58,11 @@
   </parameter>
   <parameter>
     <key>java.version.date</key>
-    <value>2021-04-20</value>
+    <value>2021-07-20</value>
   </parameter>
   <parameter>
     <key>java.home</key>
-    <value>C:\Users\anash\Downloads\Selenium Setup\eclipse-jee-2021-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre</value>
+    <value>C:\Program Files\Java\jdk-16.0.2</value>
   </parameter>
   <parameter>
     <key>testng.dtd.http</key>
@@ -102,7 +102,7 @@
   </parameter>
   <parameter>
     <key>java.runtime.version</key>
-    <value>16.0.1+9-24</value>
+    <value>16.0.2+7-67</value>
   </parameter>
   <parameter>
     <key>watermarkImagePath</key>
@@ -134,7 +134,7 @@
   </parameter>
   <parameter>
     <key>java.version</key>
-    <value>16.0.1</value>
+    <value>16.0.2</value>
   </parameter>
   <parameter>
     <key>java.vm.specification.name</key>
@@ -162,7 +162,7 @@
   </parameter>
   <parameter>
     <key>java.library.path</key>
-    <value>C:\Users\anash\Downloads\Selenium Setup\eclipse-jee-2021-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\anash\Downloads\Selenium Setup\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Users\anash\AppData\Local\Microsoft\WindowsApps;C:\Users\anash\.dotnet\tools;;C:\Users\anash\Downloads\Selenium Setup\eclipse-jee-2021-06-R-win32-x86_64\eclipse;;.</value>
+    <value>C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\anash\Downloads\Selenium Setup\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Users\anash\AppData\Local\Microsoft\WindowsApps;C:\Users\anash\.dotnet\tools;Documents;;.</value>
   </parameter>
   <parameter>
     <key>java.vendor</key>
@@ -278,7 +278,7 @@
   </parameter>
   <parameter>
     <key>java.vm.name</key>
-    <value>OpenJDK 64-Bit Server VM</value>
+    <value>Java HotSpot(TM) 64-Bit Server VM</value>
   </parameter>
   <parameter>
     <key>apiConnectionTimeout</key>
@@ -298,7 +298,7 @@
   </parameter>
   <parameter>
     <key>java.vm.info</key>
-    <value>mixed mode</value>
+    <value>mixed mode, sharing</value>
   </parameter>
   <parameter>
     <key>java.class.version</key>
@@ -434,7 +434,7 @@
   </parameter>
   <parameter>
     <key>surefire.real.class.path</key>
-    <value>C:\Users\anash\AppData\Local\Temp\surefire15888933792722803089\surefirebooter9126886934983139211.jar</value>
+    <value>C:\Users\anash\AppData\Local\Temp\surefire6206632112512398295\surefirebooter12114768473427912562.jar</value>
   </parameter>
   <parameter>
     <key>shellSessionTimeout</key>
@@ -442,7 +442,7 @@
   </parameter>
   <parameter>
     <key>java.runtime.name</key>
-    <value>OpenJDK Runtime Environment</value>
+    <value>Java(TM) SE Runtime Environment</value>
   </parameter>
   <parameter>
     <key>generateExtentReports</key>
@@ -474,7 +474,7 @@
   </parameter>
   <parameter>
     <key>java.vm.version</key>
-    <value>16.0.1+9-24</value>
+    <value>16.0.2+7-67</value>
   </parameter>
   <parameter>
     <key>cucumber.glue</key>

@@ -42,7 +42,7 @@ public class TeacherRegisterationTest extends TestBase{
 	//Teacher Can Login With Valid Email and Valid Password
 	public void teacherLoginWithValidInput() {
 		homePageObject = new HomePage(driver);
-		homePageObject.loginBtn.click();
+		homePageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
 		loginPageObject.teacherLoginBtn.click();

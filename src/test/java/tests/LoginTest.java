@@ -20,15 +20,12 @@ public class LoginTest extends TestBase{
 	//User Can Login With Valid Username and Valid Password
 	public void userCanLoginWithValidData() {
 		homePageObject = new HomePage(driver);
-		homePageObject.loginBtn.click();
+		homePageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin(email, password);
 		profilePageObject = new ProfilePage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.urlContains("profile"));
 		assertTrue(driver.getCurrentUrl().contains("profile"));
-		//profilePageObject.selectLogoutBtn();
-		//assertEquals(homePageObject.loginBtn.getText(),"سجل الدخول");
-		//profilePageObject.scriptToClickBtn(profilePageObject.schoolsBtn);
 	}
 }

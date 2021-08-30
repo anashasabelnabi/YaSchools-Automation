@@ -22,7 +22,7 @@ public class TeacherLoginWithInvalidData extends TestBase{
 	//Teacher Cannot Login With invalid Email and valid password
 	public void teacherCannotLoginWithInValidEmail() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
 		loginPageObject.teacherLoginBtn.click();
@@ -38,7 +38,7 @@ public class TeacherLoginWithInvalidData extends TestBase{
 	//Teacher Cannot Login With Wrong Email and valid password
 	public void teacherCannotLoginWithWrongEmail() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
 		loginPageObject.teacherLoginBtn.click();
@@ -54,7 +54,7 @@ public class TeacherLoginWithInvalidData extends TestBase{
 	//Teacher Cannot Login With valid Email and invalid password
 	public void teacherCannotLoginWithInValidPassword() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
 		loginPageObject.teacherLoginBtn.click();
@@ -69,7 +69,7 @@ public class TeacherLoginWithInvalidData extends TestBase{
 	//Teacher Cannot Login With invalid Email and invalid password
 	public void teacherCannotLoginWithInvaildEmailAndInValidPassword() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
 		loginPageObject.teacherLoginBtn.click();
@@ -85,7 +85,7 @@ public class TeacherLoginWithInvalidData extends TestBase{
 	//Teacher Cannot login Without Entering Email
 	public void emailFieldIsRequired() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
 		loginPageObject.teacherLoginBtn.click();
@@ -101,7 +101,7 @@ public class TeacherLoginWithInvalidData extends TestBase{
 	//Teacher Cannot login Without Entering Password
 	public void passwordFieldIsRequired() {
 		homeBageObject = new HomePage(driver);
-		homeBageObject.loginBtn.click();
+		homeBageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
 		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
 		loginPageObject.teacherLoginBtn.click();
