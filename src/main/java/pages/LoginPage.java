@@ -25,7 +25,7 @@ public class LoginPage extends PageBase {
 	@FindBy(xpath="//*[@id=\"login-form\"]/div/div[1]/div[2]/div[1]/div/p")
 	public WebElement emailValidation;
 	
-	@FindBy(id="loginform-password")
+	@FindBy(id="password")
 	public WebElement passwordInput;
 	
 	@FindBy(xpath="//*[@id=\"login-form\"]/div/div[1]/div[2]/div[2]/div/p")

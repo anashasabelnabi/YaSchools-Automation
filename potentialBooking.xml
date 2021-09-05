@@ -3,10 +3,9 @@
 	<parameter name="browser" value="chrome" />
 	<test name="Potential Booking Test">
 		<classes>
-<!-- 			<class name="tests.LoginTest" /> -->
-			<!-- <class name="tests.PotentialBookingTest" /> -->
-			<class name="tests.PotentialBookingWithoutLoginTest" />
-			
+			<class name="tests.LoginTest" />
+			<class name="tests.PotentialBookingTest" />
+<!-- 			<class name="tests.PotentialBookingWithoutLoginTest" /> -->
 		</classes>
 	</test>
 </suite>

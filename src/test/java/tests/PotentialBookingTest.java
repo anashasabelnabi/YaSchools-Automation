@@ -17,7 +17,6 @@ public class PotentialBookingTest extends TestBase {
 	public void parentCanMakePotentailBookingRequest () {
 		//Click Book Now
 		profilePageObject = new ProfilePage(driver);
-		profilePageObject.closeAnnouncment();
 		profilePageObject.clickShowSchoolPage();
 		//Open School Page
 		schoolPageObject = new SchoolPage(driver);

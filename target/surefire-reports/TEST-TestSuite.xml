@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="34.837" tests="2" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="56.237" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -13,7 +13,7 @@
     <property name="propertiesFolderPath_CI" value=""/>
     <property name="allureResultsFolderPath" value="allure-results/"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\anash\AppData\Local\Temp\surefire6206632112512398295\surefirebooter12114768473427912562.jar C:\Users\anash\AppData\Local\Temp\surefire6206632112512398295 2021-08-30T20-20-18_603-jvmRun1 surefire1724308816964381943tmp surefire_08216919970931175351tmp"/>
+    <property name="sun.java.command" value="C:\Users\anash\AppData\Local\Temp\surefire5500063107289391594\surefirebooter4823971688076301894.jar C:\Users\anash\AppData\Local\Temp\surefire5500063107289391594 2021-09-05T11-31-50_508-jvmRun1 surefire6349721460848578149tmp surefire_0854653214862644080tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="screenshotParams_watermarkOpacity" value="0.2"/>
     <property name="maximumPerformanceMode" value="0"/>
@@ -63,7 +63,7 @@
     <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
     <property name="implicitWaitTimeout" value="30"/>
     <property name="lazyLoadingTimeout" value="30"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\anash\Downloads\Selenium Setup\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Users\anash\AppData\Local\Microsoft\WindowsApps;C:\Users\anash\.dotnet\tools;Documents;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\anash\Downloads\Selenium Setup\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Users\anash\AppData\Local\Microsoft\WindowsApps;C:\Users\anash\.dotnet\tools;;C:\Users\anash\Downloads\Selenium Setup\eclipse-jee-2021-06-R-win32-x86_64\eclipse;;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="customDriverName" value=""/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
@@ -112,7 +112,7 @@
     <property name="createAnimatedGif" value="true"/>
     <property name="screenshotParams_screenshotType" value="Regular"/>
     <property name="debugMode" value="false"/>
-    <property name="surefire.real.class.path" value="C:\Users\anash\AppData\Local\Temp\surefire6206632112512398295\surefirebooter12114768473427912562.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\anash\AppData\Local\Temp\surefire5500063107289391594\surefirebooter4823971688076301894.jar"/>
     <property name="shellSessionTimeout" value="30"/>
     <property name="applitoolsApiKey" value=""/>
     <property name="cucumber.plugin" value="pretty, html:allure-results/cucumberReport.html, com.shaft.tools.listeners.CucumberFeatureListener"/>
@@ -146,19 +146,7 @@
     <property name="java.class.version" value="60.0"/>
     <property name="video.folder" value="allure-results/videos"/>
   </properties>
-  <testcase name="parentCanMakePotentailBookingRequestWithoutLogin" classname="tests.PotentialBookingWithoutLoginTest" time="23.862">
-    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=92.0.4515.159)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q6V2744&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 420db69d00faeb698b4ca050c9991f82&#10;*** Element info: {Using=id, value=childsuperior-full_name}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q6V2744', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 420db69d00faeb698b4ca050c9991f82
-*** Element info: {Using=id, value=childsuperior-full_name}
-	at tests.PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin(PotentialBookingWithoutLoginTest.java:37)
-]]></failure>
+  <testcase name="userCanLoginWithValidData" classname="tests.LoginTest" time="17.186">
     <system-out><![CDATA[
 ################################################################################################################################################
 Detected SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
@@ -166,148 +154,94 @@ Detected SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
 
 ################################################################################################################################################
 Starting Execution of a Configuration (Setup or Teardown) Method
-Test Method:		[tests.PotentialBookingWithoutLoginTest.startDriver]
+Test Method:		[tests.LoginTest.startDriver]
 ################################################################################################################################################
 
 ################################################################################################################################################
-Starting Execution:	[1 out of 1] test cases in the current suite
-Test Method:		[tests.PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin]
+Starting Execution:	[1 out of 2] test cases in the current suite
+Test Method:		[tests.LoginTest.userCanLoginWithValidData]
 ################################################################################################################################################
-[ReportManager] Element Action [IsElementDisplayed] successfully performed. @30-08-2021 20:20:37.0333 PM
-[ReportManager] Element Action [Click] successfully performed. @30-08-2021 20:20:38.0702 PM
-[ReportManager] Element Action [Type] successfully performed. With the following test data [ajyal]. @30-08-2021 20:20:39.0336 PM
-[ReportManager] Element Action [Click] successfully performed. With the following test data [ابحث الآن]. @30-08-2021 20:20:42.0151 PM
-[ReportManager] Element Action [Click] successfully performed. With the following test data [Ajyal Mostakbal School]. @30-08-2021 20:20:47.0253 PM
-[ReportManager] Element Action [Click] successfully performed. With the following test data [احجز الان جديد]. @30-08-2021 20:20:50.0195 PM
-[ReportManager] Successfully created attachment [Animated Gif - parentCanMakePotentailBookingRequestWithoutLogin] @30-08-2021 20:20:53.0775 PM
-[ReportManager] Successfully created attachment [SHAFT Engine Logs - Current Method log: parentCanMakePotentailBookingRequestWithoutLogin] @30-08-2021 20:20:53.0779 PM
+[ReportManager] Element Action [IsElementDisplayed] successfully performed. @05-09-2021 11:32:14.0391 AM
+[ReportManager] Element Action [Click] successfully performed. @05-09-2021 11:32:15.0765 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [سجل الدخول]. @05-09-2021 11:32:18.0277 AM
+[ReportManager] Successfully created attachment [Animated Gif - userCanLoginWithValidData] @05-09-2021 11:32:23.0950 AM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Current Method log: userCanLoginWithValidData] @05-09-2021 11:32:23.0953 AM
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "src/test/resources/Properties/internal.properties"]. @30-08-2021 20:20:22.0456 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Reading properties directory: src/test/resources/Properties @30-08-2021 20:20:22.0463 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "src/test/resources/Properties"]. @30-08-2021 20:20:22.0464 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\cucumber.properties @30-08-2021 20:20:22.0501 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\ExecutionPlatform.properties @30-08-2021 20:20:22.0501 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\MobileCapabilities.properties @30-08-2021 20:20:22.0502 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\path.properties @30-08-2021 20:20:22.0503 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\pattern.properties @30-08-2021 20:20:22.0503 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\PlatformFlags.properties @30-08-2021 20:20:22.0504 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\Reporting.properties @30-08-2021 20:20:22.0505 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\testNG.properties @30-08-2021 20:20:22.0505 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\Timeouts.properties @30-08-2021 20:20:22.0506 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\video.properties @30-08-2021 20:20:22.0507 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\VisualValidations.properties @30-08-2021 20:20:22.0507 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Reading properties directory: file:/C:/Users/anash/.m2/repository/io/github/mohabmohie/SHAFT_ENGINE/5.3.20210621/SHAFT_ENGINE-5.3.20210621.jar!/resources/defaultProperties/ @30-08-2021 20:20:22.0509 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [UnpackArchive] successfully performed. With the following test data [Target File"C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\target\arc14280675922494764631.zip" | Destination Folder: "target"]. @30-08-2021 20:20:22.0626 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DeleteFile] successfully performed. With the following test data [Target File Path: "C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\target\arc14280675922494764631.zip"]. @30-08-2021 20:20:22.0628 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [UnpackArchive] successfully performed. With the following test data [Target URL"file:/C:/Users/anash/.m2/repository/io/github/mohabmohie/SHAFT_ENGINE/5.3.20210621/SHAFT_ENGINE-5.3.20210621.jar" | Destination Folder: "target/"]. @30-08-2021 20:20:22.0628 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "target/resources/defaultProperties/"]. @30-08-2021 20:20:22.0629 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\cucumber.properties @30-08-2021 20:20:22.0631 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\ExecutionPlatform.properties @30-08-2021 20:20:22.0632 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\internal.properties @30-08-2021 20:20:22.0633 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\MobileCapabilities.properties @30-08-2021 20:20:22.0633 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\path.properties @30-08-2021 20:20:22.0634 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\pattern.properties @30-08-2021 20:20:22.0635 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\PlatformFlags.properties @30-08-2021 20:20:22.0636 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\Reporting.properties @30-08-2021 20:20:22.0636 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\testNG.properties @30-08-2021 20:20:22.0638 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\Timeouts.properties @30-08-2021 20:20:22.0639 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\video.properties @30-08-2021 20:20:22.0640 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\VisualValidations.properties @30-08-2021 20:20:22.0641 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "src/test/resources/Properties/ExecutionPlatform.properties"]. @30-08-2021 20:20:22.0991 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DeleteFolder] successfully performed. With the following test data [Target Folder: "extent-reports"]. @30-08-2021 20:20:23.0016 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Preparing Allure Reporting Environment... @30-08-2021 20:20:24.0503 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DeleteFolder] successfully performed. With the following test data [Target Folder: "allure-results"]. @30-08-2021 20:20:24.0513 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "C:\Users\anash\.m2\repository\allure\allure-2.14.0\bin\allure"]. @30-08-2021 20:20:24.0519 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [GetAbsolutePath] successfully performed. With the following test data [Relative File Path: "generate_allure_report.bat"]. @30-08-2021 20:20:24.0520 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [WriteToFile] successfully performed. With the following test data [Target File Path: "C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\generate_allure_report.bat"]. @30-08-2021 20:20:24.0528 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [GetAbsolutePath] successfully performed. With the following test data [Relative File Path: "allure-results/environment.xml"]. @30-08-2021 20:20:24.0740 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [WriteToFile] successfully performed. With the following test data [Target File Path: "C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\allure-results\environment.xml"]. @30-08-2021 20:20:24.0753 PM
-Starting ChromeDriver 92.0.4515.43 (8c61b7e2989f2990d42f859cac71319137787cce-refs/branch-heads/4515@{#306}) on port 16387
+    <system-err><![CDATA[[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "src/test/resources/Properties/internal.properties"]. @05-09-2021 11:31:54.0691 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Reading properties directory: src/test/resources/Properties @05-09-2021 11:31:54.0700 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "src/test/resources/Properties"]. @05-09-2021 11:31:54.0701 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\cucumber.properties @05-09-2021 11:31:54.0744 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\ExecutionPlatform.properties @05-09-2021 11:31:54.0745 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\MobileCapabilities.properties @05-09-2021 11:31:54.0747 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\path.properties @05-09-2021 11:31:54.0749 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\pattern.properties @05-09-2021 11:31:54.0750 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\PlatformFlags.properties @05-09-2021 11:31:54.0752 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\Reporting.properties @05-09-2021 11:31:54.0753 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\testNG.properties @05-09-2021 11:31:54.0754 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\Timeouts.properties @05-09-2021 11:31:54.0755 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\video.properties @05-09-2021 11:31:54.0756 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: src\test\resources\Properties\VisualValidations.properties @05-09-2021 11:31:54.0757 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Reading properties directory: file:/C:/Users/anash/.m2/repository/io/github/mohabmohie/SHAFT_ENGINE/5.3.20210621/SHAFT_ENGINE-5.3.20210621.jar!/resources/defaultProperties/ @05-09-2021 11:31:54.0759 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [UnpackArchive] successfully performed. With the following test data [Target File"C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\target\arc4601892247872288061.zip" | Destination Folder: "target"]. @05-09-2021 11:31:54.0895 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DeleteFile] successfully performed. With the following test data [Target File Path: "C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\target\arc4601892247872288061.zip"]. @05-09-2021 11:31:54.0897 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [UnpackArchive] successfully performed. With the following test data [Target URL"file:/C:/Users/anash/.m2/repository/io/github/mohabmohie/SHAFT_ENGINE/5.3.20210621/SHAFT_ENGINE-5.3.20210621.jar" | Destination Folder: "target/"]. @05-09-2021 11:31:54.0898 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "target/resources/defaultProperties/"]. @05-09-2021 11:31:54.0899 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\cucumber.properties @05-09-2021 11:31:54.0902 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\ExecutionPlatform.properties @05-09-2021 11:31:54.0903 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\internal.properties @05-09-2021 11:31:54.0904 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\MobileCapabilities.properties @05-09-2021 11:31:54.0905 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\path.properties @05-09-2021 11:31:54.0907 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\pattern.properties @05-09-2021 11:31:54.0908 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\PlatformFlags.properties @05-09-2021 11:31:54.0909 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\Reporting.properties @05-09-2021 11:31:54.0910 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\testNG.properties @05-09-2021 11:31:54.0912 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\Timeouts.properties @05-09-2021 11:31:54.0913 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\video.properties @05-09-2021 11:31:54.0914 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Loading properties file: target\resources\defaultProperties\VisualValidations.properties @05-09-2021 11:31:54.0916 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "src/test/resources/Properties/ExecutionPlatform.properties"]. @05-09-2021 11:31:55.0355 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DeleteFolder] successfully performed. With the following test data [Target Folder: "extent-reports"]. @05-09-2021 11:31:55.0384 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] Preparing Allure Reporting Environment... @05-09-2021 11:31:56.0952 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DeleteFolder] successfully performed. With the following test data [Target Folder: "allure-results"]. @05-09-2021 11:31:56.0968 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [DoesFileExist] successfully performed. With the following test data [File Path: "C:\Users\anash\.m2\repository\allure\allure-2.14.0\bin\allure"]. @05-09-2021 11:31:56.0974 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [GetAbsolutePath] successfully performed. With the following test data [Relative File Path: "generate_allure_report.bat"]. @05-09-2021 11:31:56.0976 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [WriteToFile] successfully performed. With the following test data [Target File Path: "C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\generate_allure_report.bat"]. @05-09-2021 11:31:56.0984 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [GetAbsolutePath] successfully performed. With the following test data [Relative File Path: "allure-results/environment.xml"]. @05-09-2021 11:31:57.0179 AM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [WriteToFile] successfully performed. With the following test data [Target File Path: "C:\Users\anash\Downloads\Selenium Setup\YaSchools-master\YaSchools-master\allure-results\environment.xml"]. @05-09-2021 11:31:57.0192 AM
+Starting ChromeDriver 92.0.4515.43 (8c61b7e2989f2990d42f859cac71319137787cce-refs/branch-heads/4515@{#306}) on port 24141
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 30, 2021 8:20:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 05, 2021 11:31:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20210830-202022", Target File: "\1630347636284_parentCanMakePotentailBookingRequestWithoutLogin.gif"]. @30-08-2021 20:20:36.0668 PM
-[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] org.openqa.selenium.interactions.MoveTargetOutOfBoundsException:
-move target out of bounds
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q6V2744', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 420db69d00faeb698b4ca050c9991f82
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
-com.shaft.gui.element.ElementActionsHelper.performHoverUsingJavascript(ElementActionsHelper.java:209)
-com.shaft.gui.element.WebDriverElementActions.click(WebDriverElementActions.java:116)
-com.shaft.gui.element.ElementActions.click(ElementActions.java:62)
-pages.AllSchoolsPage.openSchoolPage(AllSchoolsPage.java:27)
-tests.PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin(PotentialBookingWithoutLoginTest.java:31)
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-java.base/java.lang.reflect.Method.invoke(Method.java:567)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-org.testng.TestRunner.privateRun(TestRunner.java:794)
-org.testng.TestRunner.run(TestRunner.java:596)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-org.testng.SuiteRunner.run(SuiteRunner.java:276)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-org.testng.TestNG.runSuites(TestNG.java:1063)
-org.testng.TestNG.run(TestNG.java:1031)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548) @30-08-2021 20:20:43.0427 PM
+[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20210905-113155", Target File: "\1630834333209_userCanLoginWithValidData.gif"]. @05-09-2021 11:32:13.0731 AM
 ]]></system-err>
   </testcase>
-  <testcase name="takeScreenshotOnFailure[[TestResult name=parentCanMakePotentailBookingRequestWithoutLogin status=FAILURE method=PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin()[pri:0, instance:tests.PotentialBookingWithoutLoginTest@2a03d65c] output=&#10;################################################################################################################################################&#10;Starting Execution:	[1 out of 1] test cases in the current suite&#10;Test Method:		[tests.PotentialBookingWithoutLoginTest.parentCanMakePotentailBookingRequestWithoutLogin]&#10;################################################################################################################################################]](0)" classname="tests.PotentialBookingWithoutLoginTest" time="23.901">
-    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=92.0.4515.159)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-Q6V2744&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 420db69d00faeb698b4ca050c9991f82" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q6V2744', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 420db69d00faeb698b4ca050c9991f82
-]]></failure>
+  <testcase name="parentCanMakePotentailBookingRequest" classname="tests.PotentialBookingTest" time="22.435">
     <system-out><![CDATA[
 ################################################################################################################################################
 Starting Execution of a Configuration (Setup or Teardown) Method
-Test Method:		[tests.PotentialBookingWithoutLoginTest.takeScreenshotOnFailure]
+Test Method:		[tests.LoginTest.takeScreenshotOnFailure]
 ################################################################################################################################################
-Failed
-Taking Screenshot...
+
+################################################################################################################################################
+Starting Execution:	[2 out of 2] test cases in the current suite
+Test Method:		[tests.PotentialBookingTest.parentCanMakePotentailBookingRequest]
+################################################################################################################################################
+[ReportManager] Element Action [Click] successfully performed. With the following test data [عرض صفحة المدرسة]. @05-09-2021 11:32:29.0540 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [احجز الان جديد]. @05-09-2021 11:32:34.0117 AM
+[ReportManager] Element Action [IsElementDisplayed] successfully performed. @05-09-2021 11:32:35.0102 AM
+[ReportManager] Element Action [IsElementClickable] successfully performed. @05-09-2021 11:32:35.0502 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [اسم الطالب]. @05-09-2021 11:32:36.0642 AM
+[ReportManager] Element Action [IsElementDisplayed] successfully performed. @05-09-2021 11:32:37.0000 AM
+[ReportManager] Element Action [IsElementClickable] successfully performed. @05-09-2021 11:32:37.0382 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [anooos]. @05-09-2021 11:32:38.0956 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [1]. @05-09-2021 11:32:41.0089 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [متابعة]. @05-09-2021 11:32:42.0084 AM
+[ReportManager] Element Action [GetText] successfully performed. With the following test data [تم إرسال طلب الحجز بنجاح]. @05-09-2021 11:32:46.0780 AM
+[ReportManager] Successfully created attachment [Animated Gif - parentCanMakePotentailBookingRequest] @05-09-2021 11:32:46.0787 AM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Current Method log: parentCanMakePotentailBookingRequest] @05-09-2021 11:32:46.0790 AM
 ]]></system-out>
+    <system-err><![CDATA[[main] INFO com.shaft.tools.io.ReportManagerHelper - [ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20210905-113155", Target File: "\1630834345701_parentCanMakePotentailBookingRequest.gif"]. @05-09-2021 11:32:25.0746 AM
+]]></system-err>
   </testcase>
 </testsuite>
