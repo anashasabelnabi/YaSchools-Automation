@@ -1,0 +1,10 @@
+
+################################################################################################################################################
+Starting Execution:	[1 out of 2] test cases in the current suite
+Test Method:		[tests.LoginTest.userCanLoginWithValidData]
+################################################################################################################################################
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20210906-163615", Target File: "\1630938990018_userCanLoginWithValidData.gif"]. @06-09-2021 16:36:30.0446 PM
+[ReportManager] Element Action [IsElementDisplayed] successfully performed. @06-09-2021 16:36:31.0128 PM
+[ReportManager] Element Action [Click] successfully performed. @06-09-2021 16:36:33.0027 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [??? ??????]. @06-09-2021 16:36:35.0235 PM
+[ReportManager] Successfully created attachment [Animated Gif - userCanLoginWithValidData] @06-09-2021 16:36:39.0131 PM
