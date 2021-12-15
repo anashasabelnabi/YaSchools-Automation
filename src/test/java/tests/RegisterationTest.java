@@ -4,13 +4,15 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
+import com.shaft.gui.element.ElementActions;
+
 import pages.HomePage;
 import pages.ProfilePage;
 import pages.RegisterationPage;
 
 public class RegisterationTest extends TestBase{
 	String fullName = "somia Hasab ELnabi";
-	String email = "somia1446@gmail.com";
+	String email = "somia997@gmail.com";
 	String password = "123456789";
 	
 	HomePage homePageObject;
@@ -21,10 +23,10 @@ public class RegisterationTest extends TestBase{
 	public void userRegisterWithValidInput(){
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		registerPageObject.userRegistration(fullName,email,password,password);
-		assertEquals(homePageObject.alertConfirmationMsg.getText(),
+		assertEquals(ElementActions.getText(driver, homePageObject.alertConfirmationMsg),
 				"تم انشاء الحساب بنجاح .من فضلك افحص البريد الإلكتروني لتفعيل الحساب");
 	}
 

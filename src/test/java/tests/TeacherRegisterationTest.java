@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.shaft.gui.element.ElementActions;
+
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ProfilePage;
@@ -27,14 +29,14 @@ public class TeacherRegisterationTest extends TestBase{
 	public void teacherRegisterWithValidInput(){
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		assertEquals(registerPageObject.teacherLoginBtn.getText(), "تسجيل دخول معلم");
 		registerPageObject.teacherLoginBtn.click();
 		assertEquals(registerPageObject.loginBtn.getText(),"تسجيل حساب معلم");
 		registerPageObject.scriptToClickBtn(registerPageObject.loginBtn);
 		registerPageObject.userRegistration(fullName,email,password,password);
-		assertEquals(homePageObject.alertConfirmationMsg.getText(),
+		assertEquals(ElementActions.getText(driver, homePageObject.alertConfirmationMsg),
 				"تم انشاء الحساب بنجاح .من فضلك افحص البريد الإلكتروني لتفعيل الحساب");
 	}
 	
@@ -44,13 +46,12 @@ public class TeacherRegisterationTest extends TestBase{
 		homePageObject = new HomePage(driver);
 		homePageObject.clickLogin();
 		loginPageObject = new LoginPage(driver);
-		assertEquals(loginPageObject.teacherLoginBtn.getText(),"تسجيل دخول معلم");
-		loginPageObject.teacherLoginBtn.click();
+		assertEquals(ElementActions.getText(driver, loginPageObject.teacherLoginBtn),"تسجيل دخول معلم");
+		ElementActions.click(driver, loginPageObject.teacherLoginBtn);
 		assertTrue(driver.getCurrentUrl().contains("teacher/login"));
 		loginPageObject.userLogin(email,password);
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.visibilityOf(loginPageObject.confirmationEmailValidation));
 		assertEquals(loginPageObject.confirmationEmailValidation.getText(),"عليك تفعيل حسابك أولاً. من فضلك تفقد بريدك الالكتروني.");
-		loginPageObject.backToHomeBtn.click();
-	}
+		loginPageObject.backToHome();	}
 }

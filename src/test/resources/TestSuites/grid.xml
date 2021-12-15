@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="User Registeration suit" parallel="tests" thread-count="2">
+	<test name="Chrome Registeration Test">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="tests.RegisterationGridTest" />
+		</classes>
+	</test>
+	<test name="FireFox Registeration Test">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<class name="tests.RegisterationGridTest" />
+		</classes>
+	</test>
+
+</suite>
+
+

@@ -1,0 +1,64 @@
+################################################################################################################################################
+Detected SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
+################################################################################################################################################
+[ReportManager] File Action [GetAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @14-12-2021 14:25:44.0685 PM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @14-12-2021 14:25:44.0796 PM
+[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @14-12-2021 14:25:44.0800 PM
+[ReportManager] Successfully Opened Google Chrome. @14-12-2021 14:25:48.0247 PM
+[ReportManager] Target URL: [https://qc.yaschools.com/] @14-12-2021 14:25:48.0275 PM
+[ReportManager] Initial URL: [data:,] @14-12-2021 14:25:48.0334 PM
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211214-142542", Target File: "\1639484752262_startDriver.gif"]. @14-12-2021 14:25:52.0694 PM
+[ReportManager] Browser Action [NavigateToURL] successfully performed. With the following test data [https://qc.yaschools.com/]. @14-12-2021 14:25:53.0166 PM
+[ReportManager] Successfully created attachment [Animated Gif - startDriver] @14-12-2021 14:25:53.0172 PM
+
+################################################################################################################################################
+Starting Execution:	[1 out of 3] test cases in the current suite
+Test Method:		[tests.LoginTest.userCanLoginWithValidData]
+Test Description:	[Login Functionality]
+################################################################################################################################################
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211214-142542", Target File: "\1639484756516_userCanLoginWithValidData.gif"]. @14-12-2021 14:25:56.0577 PM
+[ReportManager] Element Action [IsElementDisplayed] successfully performed. @14-12-2021 14:25:56.0930 PM
+[ReportManager] Element Action [Click] successfully performed. @14-12-2021 14:25:58.0145 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [??? ??????]. @14-12-2021 14:26:00.0310 PM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [anas123@gmail.com]. @14-12-2021 14:26:01.0534 PM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [123456]. @14-12-2021 14:26:02.0136 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [????]. @14-12-2021 14:26:03.0095 PM
+[ReportManager] Successfully created attachment [Animated Gif - userCanLoginWithValidData] @14-12-2021 14:26:06.0183 PM
+
+################################################################################################################################################
+Starting Execution:	[2 out of 3] test cases in the current suite
+Test Method:		[tests.OnlineBookingTest.parentCanUseOnlineBooking]
+Test Description:	[Online Booking Feature]
+################################################################################################################################################
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211214-142542", Target File: "\1639484768036_parentCanUseOnlineBooking.gif"]. @14-12-2021 14:26:08.0090 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [??? ???? ???????]. @14-12-2021 14:26:11.0412 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [???? ???? ????]. @14-12-2021 14:26:14.0727 PM
+[ReportManager] Element Action [IsElementDisplayed] successfully performed. @14-12-2021 14:26:15.0929 PM
+[ReportManager] Element Action [IsElementClickable] successfully performed. @14-12-2021 14:26:16.0422 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [??? ??????]. @14-12-2021 14:26:17.0337 PM
+[ReportManager] Element Action [IsElementDisplayed] successfully performed. @14-12-2021 14:26:17.0687 PM
+[ReportManager] Element Action [IsElementClickable] successfully performed. @14-12-2021 14:26:18.0060 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [anooos]. @14-12-2021 14:26:19.0763 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [1]. @14-12-2021 14:26:22.0327 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [1]. @14-12-2021 14:26:24.0932 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [??? ?????? ??????]. @14-12-2021 14:26:26.0432 PM
+[ReportManager] Successfully created attachment [Animated Gif - parentCanUseOnlineBooking] @14-12-2021 14:26:28.0298 PM
+
+################################################################################################################################################
+Starting Execution:	[3 out of 3] test cases in the current suite
+Test Method:		[tests.PaymentWithRequestAlLoanTest.parentCanPayUsingRequestLoan]
+################################################################################################################################################
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211214-142542", Target File: "\1639484790201_parentCanPayUsingRequestLoan.gif"]. @14-12-2021 14:26:30.0256 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [4- ??? ????? ?? ??????? (?????? ??????? ???????) (12 ??? - 985 ???? ??????) * ?????? ?? ??????? ?????????]. @14-12-2021 14:26:31.0258 PM
+[ReportManager] Element Action [IdentifyUniqueElement] failed. With the following test data [multiple elements found matching this locator "By.xpath: //a[contains(.,'???? ????') or contains(.,'Request')]".]. @14-12-2021 14:26:31.0608 PM
+[ReportManager] Successfully created attachment [Animated Gif - parentCanPayUsingRequestLoan] @14-12-2021 14:26:31.0611 PM
+
+################################################################################################################################################
+Test Closure Activities
+################################################################################################################################################
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @14-12-2021 14:26:34.0662 PM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################

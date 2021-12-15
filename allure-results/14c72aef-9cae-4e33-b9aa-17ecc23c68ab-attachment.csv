@@ -1,0 +1,3 @@
+1, Test Method "tests.PaymentWithRequestAlLoanTest.parentCanPayUsingRequestLoan" failed. Please investigate and open a new Issue if needed.
+2, Test Method "tests.LoginTest.userCanLoginWithValidData" passed. Please validate and close this open issue "Software_bug".
+3, Test Method "tests.OnlineBookingTest.parentCanUseOnlineBooking" passed. Please validate and close this open issue "Software_bug".

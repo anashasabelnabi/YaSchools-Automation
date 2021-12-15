@@ -6,16 +6,28 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import io.qameta.allure.TmsLink;
 import pages.OnlineBookingPage;
 import pages.ProfilePage;
 import pages.SchoolPage;
 
 public class OnlineBookingTest extends TestBase {
-	
+
 	SchoolPage schoolPageObject ;
 	OnlineBookingPage onlineBookingPageObject ;
 	ProfilePage profilePageObject;
-	@Test
+
+	@Test(description = "Online Booking Feature")
+	@Description("Veirify That Parent Can Use Online Booking When He is Logged In")
+	@Severity(SeverityLevel.CRITICAL)
+	@Story("Online Booking")
+	@TmsLink("Test_case")
+	@Issue("Software_bug")
 	public void parentCanUseOnlineBooking() throws InterruptedException {
 		schoolPageObject = new SchoolPage(driver);
 		onlineBookingPageObject = new OnlineBookingPage(driver);

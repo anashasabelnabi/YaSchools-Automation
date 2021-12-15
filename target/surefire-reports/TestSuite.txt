@@ -1,30 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 60.185 s <<< FAILURE! - in TestSuite
-tests.PotentialBookingTest.parentCanMakePotentailBookingRequest  Time elapsed: 18.668 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-chrome not reachable
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q6V2744', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a1975b865223942fdcca8bed337fe955
-*** Element info: {Using=xpath, value=//span[contains(@class,'select2 select2-container select2-container--krajee')][contains(@data-select2-id, '1')]}
-	at tests.PotentialBookingTest.parentCanMakePotentailBookingRequest(PotentialBookingTest.java:26)
-
-tests.PotentialBookingTest.takeScreenshotOnFailure[[TestResult name=parentCanMakePotentailBookingRequest status=FAILURE method=PotentialBookingTest.parentCanMakePotentailBookingRequest()[pri:0, instance:tests.PotentialBookingTest@2acbc859] output=
-################################################################################################################################################
-Starting Execution:	[2 out of 2] test cases in the current suite
-Test Method:		[tests.PotentialBookingTest.parentCanMakePotentailBookingRequest]
-################################################################################################################################################]](0)  Time elapsed: 34.533 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-chrome not reachable
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q6V2744', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\anash\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56896}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a1975b865223942fdcca8bed337fe955
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.733 s <<< FAILURE! - in TestSuite
+tests.PaymentWithRequestAlLoanTest.parentCanPayUsingRequestLoan  Time elapsed: 2.963 s  <<< FAILURE!
+java.lang.AssertionError: Element Action [IdentifyUniqueElement] failed. With the following test data [multiple elements found matching this locator "By.xpath: //a[contains(.,'اطلب الآن') or contains(.,'Request')]".].
+	at tests.PaymentWithRequestAlLoanTest.parentCanPayUsingRequestLoan(PaymentWithRequestAlLoanTest.java:20)
 

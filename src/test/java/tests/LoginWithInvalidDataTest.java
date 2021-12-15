@@ -6,6 +6,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.shaft.gui.element.ElementActions;
+
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ProfilePage;
@@ -25,9 +27,9 @@ public class LoginWithInvalidDataTest extends TestBase {
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("anas1234",password);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.visibilityOf(loginPageObject.emailValidation));
-		assertEquals(loginPageObject.emailValidation.getText(),"البريد الإلكتروني ليس ببريد إلكتروني صحيح.");
-		loginPageObject.backToHomeBtn.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginPageObject.emailValidation));
+		assertEquals(ElementActions.getText(driver, loginPageObject.emailValidation),"البريد الإلكتروني ليس ببريد إلكتروني صحيح.");
+		loginPageObject.backToHome();
 	}
 
 	@Test
@@ -38,9 +40,9 @@ public class LoginWithInvalidDataTest extends TestBase {
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("anas1234@yahoo.com",password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(loginPageObject.passwordValidation));
-		assertEquals(loginPageObject.passwordValidation.getText(),"كلمة المرور أو البريد الإلكتروني غير صحيح");
-		loginPageObject.backToHomeBtn.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginPageObject.passwordValidation));
+		assertEquals(ElementActions.getText(driver ,loginPageObject.passwordValidation),"كلمة المرور أو البريد الإلكتروني غير صحيح");
+		loginPageObject.backToHome();
 	}
 
 	@Test
@@ -51,9 +53,9 @@ public class LoginWithInvalidDataTest extends TestBase {
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin(email,"12345");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(loginPageObject.passwordValidation));
-		assertEquals(loginPageObject.passwordValidation.getText(),"كلمة المرور أو البريد الإلكتروني غير صحيح");
-		loginPageObject.backToHomeBtn.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginPageObject.passwordValidation));
+		assertEquals(ElementActions.getText(driver ,loginPageObject.passwordValidation),"كلمة المرور أو البريد الإلكتروني غير صحيح");
+		loginPageObject.backToHome();
 	}	
 	@Test
 	//User Cannot Login With Invalid Email and invalid Password
@@ -63,9 +65,9 @@ public class LoginWithInvalidDataTest extends TestBase {
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("anas@yahoo.com","12345");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(loginPageObject.passwordValidation));
-		assertEquals(loginPageObject.passwordValidation.getText(),"كلمة المرور أو البريد الإلكتروني غير صحيح");
-		loginPageObject.backToHomeBtn.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginPageObject.passwordValidation));
+		assertEquals(ElementActions.getText(driver ,loginPageObject.passwordValidation),"كلمة المرور أو البريد الإلكتروني غير صحيح");
+		loginPageObject.backToHome();
 	}
 
 	@Test
@@ -76,9 +78,9 @@ public class LoginWithInvalidDataTest extends TestBase {
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin("",password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(loginPageObject.emailValidation));
-		assertEquals(loginPageObject.emailValidation.getText(),"البريد الإلكتروني لا يمكن تركه فارغًا.");
-		loginPageObject.backToHomeBtn.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginPageObject.emailValidation));
+		assertEquals(ElementActions.getText(driver, loginPageObject.emailValidation),"البريد الإلكتروني لا يمكن تركه فارغًا.");
+		loginPageObject.backToHome();
 	}
 	 //User Cannot Login Without Entering Password
 	@Test
@@ -88,9 +90,9 @@ public class LoginWithInvalidDataTest extends TestBase {
 		loginPageObject = new LoginPage(driver);
 		loginPageObject.userLogin(email,"");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(loginPageObject.passwordValidation));
-		assertEquals(loginPageObject.passwordValidation.getText(),"كلمة المرور لا يمكن تركه فارغًا.");
-		loginPageObject.backToHomeBtn.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginPageObject.passwordValidation));
+		assertEquals(ElementActions.getText(driver, loginPageObject.passwordValidation),"كلمة المرور لا يمكن تركه فارغًا.");
+		loginPageObject.backToHome();
 	}
 
 }

@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.shaft.gui.element.ElementActions;
+
 import pages.HomePage;
 import pages.ProfilePage;
 import pages.RegisterationPage;
@@ -25,8 +27,8 @@ public class TeacherRegisterWithInvalidData extends TestBase{
 	public void teacherRegisterWithExistEmail() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		assertEquals(registerPageObject.teacherLoginBtn.getText(), "تسجيل دخول معلم");
 		registerPageObject.teacherLoginBtn.click();
 		assertEquals(registerPageObject.loginBtn.getText(),"تسجيل حساب معلم");
@@ -44,8 +46,8 @@ public class TeacherRegisterWithInvalidData extends TestBase{
 	public void teacherRegisterWithInValidEmail() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		assertEquals(registerPageObject.teacherLoginBtn.getText(), "تسجيل دخول معلم");
 		registerPageObject.teacherLoginBtn.click();
 		assertEquals(registerPageObject.loginBtn.getText(),"تسجيل حساب معلم");
@@ -63,8 +65,8 @@ public class TeacherRegisterWithInvalidData extends TestBase{
 	public void teacherRegisterWithInvalidName() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		assertEquals(registerPageObject.teacherLoginBtn.getText(), "تسجيل دخول معلم");
 		registerPageObject.teacherLoginBtn.click();
 		assertEquals(registerPageObject.loginBtn.getText(),"تسجيل حساب معلم");
@@ -82,8 +84,8 @@ public class TeacherRegisterWithInvalidData extends TestBase{
 	public void teacherRegisterWithEmptyName() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		assertEquals(registerPageObject.teacherLoginBtn.getText(), "تسجيل دخول معلم");
 		registerPageObject.teacherLoginBtn.click();
 		assertEquals(registerPageObject.loginBtn.getText(),"تسجيل حساب معلم");
@@ -101,8 +103,8 @@ public class TeacherRegisterWithInvalidData extends TestBase{
 	public void teacherRegisterWithShortPassword() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		assertEquals(registerPageObject.teacherLoginBtn.getText(), "تسجيل دخول معلم");
 		registerPageObject.teacherLoginBtn.click();
 		assertEquals(registerPageObject.loginBtn.getText(),"تسجيل حساب معلم");
@@ -122,8 +124,8 @@ public class TeacherRegisterWithInvalidData extends TestBase{
 	public void teacherRegisterWithEmptyPassword() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		assertEquals(registerPageObject.teacherLoginBtn.getText(), "تسجيل دخول معلم");
 		registerPageObject.teacherLoginBtn.click();
 		assertEquals(registerPageObject.loginBtn.getText(),"تسجيل حساب معلم");

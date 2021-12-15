@@ -1,51 +1,47 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends PageBase {
+import com.shaft.gui.element.ElementActions;
 
-	public JavascriptExecutor jse ;
+public class LoginPage {
+
+	private WebDriver driver;
 	public LoginPage(WebDriver driver) {
-		super(driver);
-		jse= (JavascriptExecutor) driver;
+		this.driver = driver ;
 	}
 
-	@FindBy(css="a.mx-0.flat-custom-btn")
-	public WebElement backToHomeBtn;
+	public By backToHomeBtn = By.xpath("//a/span[contains(.,'الرجوع للرئيسية')]");
 	
-	@FindBy(linkText="تسجيل دخول معلم")
-	public WebElement teacherLoginBtn;
+	public By teacherLoginBtn = By.xpath("//a[contains(.,' تسجيل دخول معلم ')]");
 	
-	@FindBy(id="loginform-identity")
-	public WebElement emailInput;
+	public By emailInput = By.id("loginform-identity");
 	
-	@FindBy(xpath="//*[@id=\"login-form\"]/div/div[1]/div[2]/div[1]/div/p")
-	public WebElement emailValidation;
+	public By emailValidation = By.xpath("//p[@class='help-block help-block-error' and contains(.,'البريد')]");
 	
-	@FindBy(id="password")
-	public WebElement passwordInput;
+	public By passwordInput = By.id("password");
 	
-	@FindBy(xpath="//*[@id=\"login-form\"]/div/div[1]/div[2]/div[2]/div/p")
-	public WebElement passwordValidation;
+	public By passwordValidation = By.xpath("//p[@class='help-block help-block-error' and contains(.,'كلمة المرور')]");
 	
-	@FindBy(css="button.btn.btn-lg.btn-block.w-100.custom-primary-button")
-	public WebElement SubmitBtn;
+	public By SubmitBtn = By.xpath("//button[@class='btn btn-lg btn-block w-100 custom-primary-button']");
 	
 	@FindBy(css="div.error")
 	public WebElement confirmationEmailValidation ;
 	
 	
-	public void userLogin(String email , String password){
-		setText(emailInput, email);
-		setText(passwordInput, password);
-		//clickButton(SubmitBtn);
-		scriptToClickBtn(SubmitBtn);
+	public void backToHome() {
+		ElementActions.click(driver, backToHomeBtn);
 	}
-	
-	public void scriptToClickBtn(WebElement button) {
-		jse.executeScript("arguments[0].click();",button);
+	public void teacherLogin() {
+		ElementActions.click(driver, teacherLoginBtn);
+	}	
+	public void userLogin(String email , String password){
+		new ElementActions(driver)
+		.type(emailInput, email)
+		.type(passwordInput, password)
+		.click(SubmitBtn);
 	}
 }

@@ -2,7 +2,6 @@ tests\PotentialBookingTest.class
 tests\TeacherRegisterWithInvalidData.class
 tests\PaymentWithRequestAlLoanTest.class
 tests\OnlineBookingTest.class
-steps\ParentLogin.class
 tests\RegisterationWithInvalidDataTest.class
 tests\TestBase.class
 utilites\Helpers.class
@@ -14,4 +13,3 @@ tests\PotentialBookingWithoutLoginTest.class
 tests\RegisterationTest.class
 tests\PaymentTest.class
 tests\TeacherRegisterationTest.class
-runner\TestRunner.class

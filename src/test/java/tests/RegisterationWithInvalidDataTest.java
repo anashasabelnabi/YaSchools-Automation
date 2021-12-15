@@ -6,6 +6,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.shaft.gui.element.ElementActions;
+
 import pages.HomePage;
 import pages.ProfilePage;
 import pages.RegisterationPage;
@@ -23,8 +25,8 @@ public class RegisterationWithInvalidDataTest extends TestBase{
 	public void userRegisterWithExistEmail() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		registerPageObject.userRegistration(fullName,email,password,password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(registerPageObject.emailValidation));
@@ -38,8 +40,8 @@ public class RegisterationWithInvalidDataTest extends TestBase{
 	public void userRegisterWithInValidEmail() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		registerPageObject.userRegistration(fullName,"somiahasab",password,password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(registerPageObject.emailValidation));
@@ -53,8 +55,8 @@ public class RegisterationWithInvalidDataTest extends TestBase{
 	public void userRegisterWithInvalidName() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		registerPageObject.userRegistration("somia",email,password,password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(registerPageObject.nameValidation));
@@ -68,8 +70,8 @@ public class RegisterationWithInvalidDataTest extends TestBase{
 	public void userRegisterWithEmptyName() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		registerPageObject.userRegistration("",email,password,password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(registerPageObject.nameValidation));
@@ -83,8 +85,8 @@ public class RegisterationWithInvalidDataTest extends TestBase{
 	public void userRegisterWithShortPassword() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		registerPageObject.userRegistration(fullName,email,"1234",password);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(registerPageObject.passwordValidation));
@@ -100,8 +102,8 @@ public class RegisterationWithInvalidDataTest extends TestBase{
 	public void userRegisterWithEmptyPassword() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		registerPageObject = new RegisterationPage(driver);
-		assertEquals(homePageObject.registerationBtn.getText(),"تسجيل حساب جديد");
-		homePageObject.registerationBtn.click();
+		assertEquals(ElementActions.getText(driver,homePageObject.registerationBtn),"تسجيل حساب جديد");
+		ElementActions.click(driver, homePageObject.registerationBtn);
 		registerPageObject.userRegistration(fullName,email,"","");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(registerPageObject.passwordValidation));

@@ -19,7 +19,7 @@ public class PaymentPage {
 	
 	public void paymentUsingSadad() {
 		if (ElementActions.isElementDisplayed(driver, makeBillUsingSadadButton)) {
-			ElementActions.click(driver, makeBillUsingSadadButton);
+			ElementActions.click(driver, makeBillUsingSadadButton);		
 			if(ElementActions.isElementDisplayed(driver, confirmBillButonUsinSadad)) {
 				ElementActions.click(driver, confirmBillButonUsinSadad);
 			}
@@ -40,11 +40,11 @@ public class PaymentPage {
 			}
 		}
 	}
-	//Payment Using Request A loan Option
-	public By openPaymentUsingLoanButton = By.xpath("//button[contains(.,'طلب تمويل') or contains(.,'Request')]");
+	//Payment Using Request A loan With National Finance
+	public By openPaymentUsingLoanButton = By.xpath("//button[contains(.,'الشركة الوطنية') or contains(.,'National Finance')]");
 	public By makeBillUsingRequestLoan = By.xpath("//a[contains(.,'اطلب الآن') or contains(.,'Request')]");
 	
-	public void paymentUsingRequestLoan() {
+	public void paymentUsingRequestLoanWithNationalFinance() {
 		ElementActions.click(driver, openPaymentUsingLoanButton);
 		if(ElementActions.isElementDisplayed(driver, makeBillUsingRequestLoan)) {
 			ElementActions.click(driver, makeBillUsingRequestLoan);

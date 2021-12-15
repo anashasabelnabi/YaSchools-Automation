@@ -2,7 +2,6 @@ package pages;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,11 +12,9 @@ import com.shaft.gui.element.ElementActions;
 
 public class OnlineBookingPage{
 
-	private WebDriver driver ;
-	public JavascriptExecutor jse ;
+	private WebDriver driver;
 	public OnlineBookingPage(WebDriver driver) {
 		this.driver = driver ;
-		jse = (JavascriptExecutor) driver ;
 	}
 	@FindBy(xpath = "//*[@id=\"bookingCtrl\"]/div[1]/div/div/div/div/h1")
 	public WebElement onlineBookingPageHeader ;
@@ -82,20 +79,10 @@ public class OnlineBookingPage{
 
 	@FindBy(css="button.btn.custom-primary-button.subBtn")
 	
-	public By payFeeButton = By.xpath("//button[contains(.,'دفع إجمالي الرسوم')]") ;
-
-
-	public void scriptToClickBtn(WebElement button) {
-		jse.executeScript("arguments[0].click();",button);
-	}
-
+	public By payFeeButton = By.xpath("//button[@class='btn custom-primary-button subBtn d-none d-lg-block']") ;
 
 	public void parentBooking(){
 		WebDriverWait wait = new WebDriverWait(driver,50);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(closeAnnouncementForm));
-		if(ElementActions.isElementDisplayed(driver, closeAnnouncementForm)) {
-			ElementActions.click(driver, closeAnnouncementForm);
-		}
 		if(ElementActions.isElementDisplayed(driver,firstClick)){
 			if(ElementActions.isElementClickable(driver,firstClick)) {
 				wait.until(ExpectedConditions.elementToBeClickable(firstClick));

@@ -7,6 +7,5 @@ pages\PotentialBookingPage.class
 pages\ProfilePage.class
 pages\AllSchoolsPage.class
 pages\PaymentPage.class
-pages\OnlineBookingShaftPage.class
 pages\PageBase.class
 pages\RequestALoanPage.class

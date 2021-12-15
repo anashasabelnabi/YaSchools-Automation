@@ -38,13 +38,6 @@
 	<profiles>
 		<profile>
 			<id>potentialBooking</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-				<property>
-					<name>environment</name>
-					<value>potentialBooking</value>
-				</property>
-			</activation>
 			<properties>
 				<testNGSuite>potentialBooking.xml</testNGSuite>
 			</properties>
@@ -95,9 +88,9 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>${testNGSuite}</suiteXmlFile>
-					</suiteXmlFiles>
+<!-- 					<suiteXmlFiles> -->
+<!-- 						<suiteXmlFile>${testNGSuite}</suiteXmlFile> -->
+<!-- 					</suiteXmlFiles> -->
 					<failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
 					<failIfNoTests>false</failIfNoTests>
 					<encoding>UTF-8</encoding>

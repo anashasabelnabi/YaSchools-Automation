@@ -6,7 +6,7 @@
   </parameter>
   <parameter>
     <key>java.specification.version</key>
-    <value>16</value>
+    <value>15</value>
   </parameter>
   <parameter>
     <key>sun.cpu.isalist</key>
@@ -30,11 +30,11 @@
   </parameter>
   <parameter>
     <key>sun.boot.library.path</key>
-    <value>C:\Program Files\Java\jdk-16.0.2\bin</value>
+    <value>C:\Program Files\Java\jdk-15\bin</value>
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>C:\Users\anash\AppData\Local\Temp\surefire12178096612393889676\surefirebooter866868803373429826.jar C:\Users\anash\AppData\Local\Temp\surefire12178096612393889676 2021-09-07T11-39-18_086-jvmRun1 surefire11608016800018407333tmp surefire_013727299584308984996tmp</value>
+    <value>C:\Users\anash\AppData\Local\Temp\surefire3724669736291485386\surefirebooter9137393430713030607.jar C:\Users\anash\AppData\Local\Temp\surefire3724669736291485386 2021-12-14T14-25-37_829-jvmRun1 surefire8613665498199211023tmp surefire_015603691549001995981tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -58,11 +58,11 @@
   </parameter>
   <parameter>
     <key>java.version.date</key>
-    <value>2021-07-20</value>
+    <value>2020-09-15</value>
   </parameter>
   <parameter>
     <key>java.home</key>
-    <value>C:\Program Files\Java\jdk-16.0.2</value>
+    <value>C:\Program Files\Java\jdk-15</value>
   </parameter>
   <parameter>
     <key>testng.dtd.http</key>
@@ -102,7 +102,7 @@
   </parameter>
   <parameter>
     <key>java.runtime.version</key>
-    <value>16.0.2+7-67</value>
+    <value>15+36-1562</value>
   </parameter>
   <parameter>
     <key>watermarkImagePath</key>
@@ -125,10 +125,6 @@
     <value>true</value>
   </parameter>
   <parameter>
-    <key>potentialBooking</key>
-    <value>true</value>
-  </parameter>
-  <parameter>
     <key>java.io.tmpdir</key>
     <value>C:\Users\anash\AppData\Local\Temp\</value>
   </parameter>
@@ -138,7 +134,7 @@
   </parameter>
   <parameter>
     <key>java.version</key>
-    <value>16.0.2</value>
+    <value>15</value>
   </parameter>
   <parameter>
     <key>java.vm.specification.name</key>
@@ -166,7 +162,7 @@
   </parameter>
   <parameter>
     <key>java.library.path</key>
-    <value>C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\anash\Downloads\Selenium Setup\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Users\anash\AppData\Local\Microsoft\WindowsApps;C:\Users\anash\.dotnet\tools;Documents;;C:\Users\anash\Downloads\Selenium Setup\eclipse-jee-2021-06-R-win32-x86_64\eclipse;;.</value>
+    <value>C:\Program Files\Java\jdk-15\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Users/anash/Downloads/Selenium Setup/eclipse-jee-2021-06-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Windows\system32;C:\Program Files\Java\jdk-15\bin;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\anash\Downloads\Selenium Setup\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\anash\AppData\Local\Microsoft\WindowsApps;C:\Users\anash\.dotnet\tools;Documents;;C:\Users\anash\Downloads\Selenium Setup\eclipse-jee-2021-06-R-win32-x86_64\eclipse;;.</value>
   </parameter>
   <parameter>
     <key>java.vendor</key>
@@ -190,7 +186,7 @@
   </parameter>
   <parameter>
     <key>cucumber.features</key>
-    <value>src/test/resources</value>
+    <value>src/test/java/features</value>
   </parameter>
   <parameter>
     <key>screenshotParams_whenToTakeAScreenshot</key>
@@ -214,11 +210,15 @@
   </parameter>
   <parameter>
     <key>java.vm.specification.version</key>
-    <value>16</value>
+    <value>15</value>
   </parameter>
   <parameter>
     <key>os.name</key>
     <value>Windows 10</value>
+  </parameter>
+  <parameter>
+    <key>test</key>
+    <value>LoginTest,OnlineBookingTest,PaymentWithRequestAlLoanTest</value>
   </parameter>
   <parameter>
     <key>surefire.test.class.path</key>
@@ -306,7 +306,7 @@
   </parameter>
   <parameter>
     <key>java.class.version</key>
-    <value>60.0</value>
+    <value>59.0</value>
   </parameter>
   <parameter>
     <key>video.folder</key>
@@ -438,7 +438,7 @@
   </parameter>
   <parameter>
     <key>surefire.real.class.path</key>
-    <value>C:\Users\anash\AppData\Local\Temp\surefire12178096612393889676\surefirebooter866868803373429826.jar</value>
+    <value>C:\Users\anash\AppData\Local\Temp\surefire3724669736291485386\surefirebooter9137393430713030607.jar</value>
   </parameter>
   <parameter>
     <key>shellSessionTimeout</key>
@@ -478,7 +478,7 @@
   </parameter>
   <parameter>
     <key>java.vm.version</key>
-    <value>16.0.2+7-67</value>
+    <value>15+36-1562</value>
   </parameter>
   <parameter>
     <key>cucumber.glue</key>
