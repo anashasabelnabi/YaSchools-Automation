@@ -15,7 +15,7 @@ public class HomePage{
 	}
 
 	public By registerationBtn = By.xpath("//li[@class='nav-item']/a[contains(.,'تسجيل حساب')]");
-	public By loginBtn = By.linkText("سجل الدخول");
+	public By loginBtn = By.xpath("//a[@class='btn btn-outline-light mx-4']");
 
 	public By searchInput = By.id("schoolNameSearch");
 	public By searchButton = By.xpath("//button[@class='btn custom-success-button homeBoxSearch']");
@@ -28,7 +28,7 @@ public class HomePage{
 	
 	
 	public void clickLogin() {
-		closeAnnouncment();
+		//closeAnnouncment();
 		ElementActions.click(driver, loginBtn);
 	}
 	public void clickRegister() {

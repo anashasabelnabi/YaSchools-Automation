@@ -1,0 +1,34 @@
+################################################################################################################################################
+Detected SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
+################################################################################################################################################
+[ReportManager] File Action [GetAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @15-06-2022 01:27:10.0529 AM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @15-06-2022 01:27:10.0628 AM
+[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @15-06-2022 01:27:10.0633 AM
+[ReportManager] Successfully Opened Google Chrome. @15-06-2022 01:27:14.0127 AM
+[ReportManager] Target URL: [https://qc.yaschools.com/] @15-06-2022 01:27:14.0156 AM
+[ReportManager] Initial URL: [data:,] @15-06-2022 01:27:14.0242 AM
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20220615-012708", Target File: "\1655249241883_startDriver.gif"]. @15-06-2022 01:27:22.0276 AM
+[ReportManager] Browser Action [NavigateToURL] successfully performed. With the following test data [https://qc.yaschools.com/]. @15-06-2022 01:27:22.0745 AM
+[ReportManager] Successfully created attachment [Animated Gif - startDriver] @15-06-2022 01:27:22.0754 AM
+
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[tests.LoginTest.userCanLoginWithValidData]
+Test Description:	[Login Functionality]
+################################################################################################################################################
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20220615-012708", Target File: "\1655249243468_userCanLoginWithValidData.gif"]. @15-06-2022 01:27:23.0649 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [??? ??????]. @15-06-2022 01:27:25.0338 AM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [anas123@gmail.com]. @15-06-2022 01:27:26.0121 AM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [123456]. @15-06-2022 01:27:26.0743 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [????]. @15-06-2022 01:27:27.0759 AM
+[ReportManager] Successfully created attachment [Animated Gif - userCanLoginWithValidData] @15-06-2022 01:27:31.0347 AM
+
+################################################################################################################################################
+Test Closure Activities
+################################################################################################################################################
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @15-06-2022 01:27:34.0415 AM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################

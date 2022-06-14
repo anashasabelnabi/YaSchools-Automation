@@ -1,9 +1,0 @@
-
-################################################################################################################################################
-Starting Execution:	[3 out of 3] test cases in the current suite
-Test Method:		[tests.PaymentWithRequestAlLoanTest.parentCanPayUsingRequestLoan]
-################################################################################################################################################
-[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211214-142542", Target File: "\1639484790201_parentCanPayUsingRequestLoan.gif"]. @14-12-2021 14:26:30.0256 PM
-[ReportManager] Element Action [Click] successfully performed. With the following test data [4- ??? ????? ?? ??????? (?????? ??????? ???????) (12 ??? - 985 ???? ??????) * ?????? ?? ??????? ?????????]. @14-12-2021 14:26:31.0258 PM
-[ReportManager] Element Action [IdentifyUniqueElement] failed. With the following test data [multiple elements found matching this locator "By.xpath: //a[contains(.,'???? ????') or contains(.,'Request')]".]. @14-12-2021 14:26:31.0608 PM
-[ReportManager] Successfully created attachment [Animated Gif - parentCanPayUsingRequestLoan] @14-12-2021 14:26:31.0611 PM
